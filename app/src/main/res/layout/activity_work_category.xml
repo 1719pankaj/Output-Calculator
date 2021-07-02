@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkCategoryActivity">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Categorywise work norms"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Truick Unloading"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/etTruck_unload"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Wagon unloading"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/etWagon_Unload"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Wagon to PF"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/etWagon_Platform"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="PF To Shed"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/etPlatform_Shed"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Truck Loading"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/etTruck_Load"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Truck To PF"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/etTruck_Platform"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Shed To Wagon"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/etShed_Wagon"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Wagon To Truck"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/etWagon_Truck"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Refilling"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/etRefill"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Restacking "
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/etRestack"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Weighment"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/etWeight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView56" />
+
+    <TextView
+        android:id="@+id/textView65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Work Norm"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/etNormal"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView60" />
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="OT Norm"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/etOtnorms"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView65" />
+
+    <EditText
+        android:id="@+id/etRefill"
+        android:layout_width="56sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="79dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="55"
+        android:inputType="number"
+        android:text="55"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView40"
+        app:layout_constraintTop_toTopOf="@+id/textView40"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etShed_Wagon"
+        android:layout_width="56sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="120"
+        android:inputType="number"
+        android:text="120"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView22"
+        app:layout_constraintTop_toTopOf="@+id/textView22"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etOtnorms"
+        android:layout_width="56sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="19"
+        android:inputType="number"
+        android:text="19"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView66"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView66"
+        app:layout_constraintTop_toTopOf="@+id/textView66"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etTruck_Platform"
+        android:layout_width="56sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="170"
+        android:inputType="number"
+        android:text="170"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="@+id/textView15"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etWagon_Unload"
+        android:layout_width="56sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="115"
+        android:inputType="number"
+        android:text="115"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etWagon_Platform"
+        android:layout_width="56sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="170"
+        android:inputType="number"
+        android:text="170"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etTruck_unload"
+        android:layout_width="56sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="135"
+        android:inputType="number"
+        android:text="135"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etNormal"
+        android:layout_width="56sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="135"
+        android:inputType="number"
+        android:text="135"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView65"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView65"
+        app:layout_constraintTop_toTopOf="@+id/textView65"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etWagon_Truck"
+        android:layout_width="56sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:inputType="number"
+        android:text="110"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView38"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView38"
+        app:layout_constraintTop_toTopOf="@+id/textView38"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etPlatform_Shed"
+        android:layout_width="56sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="180"
+        android:inputType="number"
+        android:text="180"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView13"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etTruck_Load"
+        android:layout_width="56sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="140"
+        android:inputType="number"
+        android:text="140"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="@+id/textView14"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="56sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="105"
+        android:inputType="number"
+        android:text="105"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView60"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView60"
+        app:layout_constraintTop_toTopOf="@+id/textView60"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etRestack"
+        android:layout_width="56sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="180"
+        android:inputType="number"
+        android:text="180"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView56"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView56"
+        app:layout_constraintTop_toTopOf="@+id/textView56"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etIdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="104dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="1"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_border_2"
+        android:soundEffectsEnabled="true"
+        android:text="@string/save"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etOtnorms" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

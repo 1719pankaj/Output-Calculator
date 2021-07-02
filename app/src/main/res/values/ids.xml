@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_rate" type="id" />
+    <item name="action_norms" type="id" />
+    <item name="action_update" type="id" />
+    <item name="action_about" type="id" />
+</resources>

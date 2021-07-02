@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lo_Vali_date"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".Va_lidate">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lo_Contact"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/Contact_Nm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="108sp"
+            android:layout_marginEnd="32sp"
+            android:text="@string/name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvName"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Contact_Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/number"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvNumer"
+            app:layout_constraintStart_toStartOf="@+id/Contact_Nm" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="92sp"
+            android:text="@string/my_name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Contact_Nm"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvNumer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="24sp"
+            android:text="@string/my_number"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/Contact_Number"
+            app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+        <Button
+            android:id="@+id/save_contact"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginBottom="16sp"
+            android:background="#D1C0C0"
+            android:text="@string/save_contact"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/next_validate"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24sp"
+            android:layout_marginBottom="16sp"
+            android:background="#B8B2B2"
+            android:text="@string/next_validate"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTestconyact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="239sp"
+            android:layout_marginBottom="293sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNumer" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lo_Validate"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvNote"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="32sp"
+            android:layout_marginEnd="16sp"
+            android:layout_marginBottom="21sp"
+            android:text="@string/note"
+            android:textColor="#454141"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/btWhatsapp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="101sp"
+            android:layout_marginTop="12sp"
+            android:layout_marginEnd="14sp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/request_code"
+            android:inputType="text"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btWhatsapp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btWhatsapp" />
+
+        <Button
+            android:id="@+id/btWhatsapp"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginEnd="16sp"
+            android:layout_marginBottom="57sp"
+            android:background="@drawable/whatsapp4"
+            app:layout_constraintBottom_toTopOf="@+id/btValidate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/etContact"
+            app:layout_constraintTop_toBottomOf="@+id/tvNote" />
+
+        <EditText
+            android:id="@+id/etData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="4sp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/put_code_here"
+            android:inputType="number"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/etContact"
+            app:layout_constraintTop_toBottomOf="@+id/etContact" />
+
+        <Button
+            android:id="@+id/btValidate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="461sp"
+            android:text="@string/btvalidate"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btWhatsapp" />
+
+        <Button
+            android:id="@+id/btBack"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginBottom="16sp"
+            android:background="#D1C0C0"
+            android:text="@string/back_contact"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btNext_Rate"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24sp"
+            android:layout_marginBottom="16sp"
+            android:background="#B8B2B2"
+            android:text="@string/next_validate"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
